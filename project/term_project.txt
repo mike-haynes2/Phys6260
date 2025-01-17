@@ -1,0 +1,8 @@
+Term Project (45%)
+
+    You will formulate, solve, and present a class project. This is an open-ended project in which you will pose a research question, devise a plan, and write a program to explore the system. You are free to choose a particular field of physics -- astrophysics, physics of living systems, condensed matter, non-linear dynamics, etc.
+    Students must consult with the instructor on the viability and scope of the question before finalizing it.
+    Students must finalize their research question with the instructor before Friday, February 28 (10% of grade)
+    Progress report due: Friday, March 28 (15% of grade)
+    Poster presentations: Monday, April 14 & Wednesday, April 16 (25% of grade)
+    Final report due: Tuesday, April 29 (50% of grade)
