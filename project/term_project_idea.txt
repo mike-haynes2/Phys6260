@@ -1,0 +1,12 @@
+Project idea for Comp Phys term project
+
+Group: Neil, Corrine, Kenneth
+
+Topic: 3D, (ideally distributed) MHD model
+
+Problem: Study Magnetosheath Jets (GG work, review, etc)
+
+Test cases:
+-use specific for 1D, 2D during development
+-for 3D, pickup process (inject nonuniform density and watch it evolve)
+-converts smoothly into Jet scenario
