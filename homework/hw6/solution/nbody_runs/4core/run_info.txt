@@ -1,0 +1,18 @@
+michael@michael-desktop-home-RB:~/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/4core$ mpirun -n 4 python3 HW6-Nbody0-v1.py 
+pos shape:(1000, 3)
+1 (1000, 3)
+2 (1000, 3)
+3 (1000, 3)
+0 (1000, 3)
+time = 10/5000 seconds
+time = 500/5000 seconds
+time = 1000/5000 seconds
+time = 1500/5000 seconds
+time = 2000/5000 seconds
+time = 2500/5000 seconds
+time = 3000/5000 seconds
+time = 3500/5000 seconds
+time = 4000/5000 seconds
+time = 4500/5000 seconds
+time = 5000/5000 seconds
+Compute time elapsed = 10.700 seconds (46.7 steps/sec // 4.67e+04 particle-evolve/sec)

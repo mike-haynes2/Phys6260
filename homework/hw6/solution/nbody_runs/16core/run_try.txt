@@ -1,0 +1,205 @@
+ichael@michael-desktop-home-RB:~/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core$ mpirun --oversubscribe -n 16 python3 HW6-Nbody0-v1.py 
+pos shape:(1000, 3)
+4 (1000, 3)
+12 (1000, 3)
+13 (1000, 3)
+5 (1000, 3)
+15 (1000, 3)
+0 (1000, 3)
+8 (1000, 3)
+10 (1000, 3)
+2 (1000, 3)
+3 (1000, 3)
+6 (1000, 3)
+9 (1000, 3)
+11 (1000, 3)
+14 (1000, 3)
+1 (1000, 3)
+7 (1000, 3)
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+Traceback (most recent call last):
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 138, in <module>
+    vhalf = leapfrog_initialstep(comm, pos, vel, dt)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 105, in leapfrog_initialstep
+    accel = calc_accel(comm, pos)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michael/Desktop/comp_physics/Phys6260/homework/hw6/solution/nbody_runs/16core/HW6-Nbody0-v1.py", line 99, in calc_accel
+    all_accel[int(i*inc):int(i*inc+inc)-1] = all_accel_gathered[i]
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not broadcast input array from shape (61,3) into shape (62,3)
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[12218,1],0]
+  Exit code:    1
+------------------------
