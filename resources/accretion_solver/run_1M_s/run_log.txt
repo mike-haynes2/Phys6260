@@ -1,0 +1,1 @@
+Compute time elapsed = 1432.174 seconds (69.8 steps/sec // 6.98e+04 particle-evolve/sec)
