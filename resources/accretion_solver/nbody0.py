@@ -16,7 +16,10 @@ G = 6.673e-11  # gravitational constant
 tstop = 1000000  # stop time (seconds)
 dt = 10.0
 
-np.random.seed(12345678)
+np.random.seed(123456789)
+
+## Plotting
+dpi = 265
 
 # 
 # 
@@ -150,9 +153,32 @@ while _time < tstop:
         plt.title(f"Time = {_time:.0f} s")
         plt.xlim(-5,5)
         plt.ylim(-5,5)
-        fname = f"positions-{istep:04d}.txt"
-        plt.savefig(f"positions-{istep:04d}.png", dpi=270)
-        np.savetxt(fname, pos)
+        plt.xlabel('y [m]')
+        plt.ylabel('z [m]')
+        plt.savefig(f"positions-yz-{istep:04d}.png", dpi=dpi)
+
+        plt.clf()
+        plt.scatter(pos[:,0], pos[:,2], s=10, c=np.linspace(0,1,Npart), cmap='coolwarm')
+        plt.title(f"Time = {_time:.0f} s")
+        plt.xlim(-5,5)
+        plt.ylim(-5,5)
+        plt.xlabel('x [m]')
+        plt.ylabel('z [m]')
+        plt.savefig(f"positions-xz-{istep:04d}.png", dpi=dpi)
+
+        plt.clf()
+        plt.scatter(pos[:,0], pos[:,1], s=10, c=np.linspace(0,1,Npart), cmap='coolwarm')
+        plt.title(f"Time = {_time:.0f} s")
+        plt.xlim(-5,5)
+        plt.ylim(-5,5)
+        plt.xlabel('x [m]')
+        plt.ylabel('y [m]')
+        plt.savefig(f"positions-xy-{istep:04d}.png", dpi=dpi)
+
+        if (istep % (nstep/10000) == 0):
+            fname = f"positions_velocities-{istep:04d}.txt"
+            np.savetxt(fname, np.concatenate((pos,vel),axis=1))
+
         print(f"time = {_time:.0f}/{tstop:.0f} seconds")
 time1 = time.perf_counter()
 telapsed = time1-time0
