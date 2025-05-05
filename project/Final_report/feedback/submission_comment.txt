@@ -1,0 +1,5 @@
+
+
+See comments in paper. But overall, the amount of effort you put into your solvers and code and the testing is outstanding. Nice work!
+
+-2 points for improperly formatted plots for publication.
